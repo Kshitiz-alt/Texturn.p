@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './Buttons.css'
 
-export default function Buttons(props) {
+export default function Buttons() {
     const [text, setText] = useState();
     const handleclick = () => {
         console.log(text)
@@ -25,10 +25,10 @@ export default function Buttons(props) {
             </div>
             <div className="justify-center align-center flex gap-[2em] mt-[2em] mr-[10em]">
                 <h1 className="relative right-[11em]">Preview</h1>    
-                <p>{text.length} characters and {text.split(" ").length} words</p>
-                <p>{0.000 * text.length} minutes read</p> 
+                {/* <p>{text.length} characters and {text.split(" ").length} words</p>
+                <p>{0.000 * text.length} minutes read</p>  */}
             </div>
-            <p className="h-[20vh] ml-[19em] w-[61%] border justify-center items-center flex  p-[10px] overflow-hidden overflow-y-scroll OverFlow">{text}</p>
+            <p className="h-[20vh] ml-[19em] w-[61%] border justify-center items-center flex  p-[10px] overflow-hidden overflow-y-scroll OverFlow bg-[rgba(0,0,0,0.8)] text-[white]">{text}</p>
         </div>
     )
 }
