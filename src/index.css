@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+:root{
+  /* background:radial-gradient(circle,cornsilk,black); */
+  background-image: url(/R.gif);
+  background-size: cover;
+}
